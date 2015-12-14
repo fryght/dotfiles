@@ -40,3 +40,5 @@ set directory=~/.vim-tmp,~/.tmp,/var/tmp,/tmp
 let g:airline_powerline_fonts = 1
 set laststatus=2
 
+inoremap jj <ESC>
+cnoremap w!! w !sudo tee > /dev/null %
