@@ -1,11 +1,6 @@
 local opts = { noremap = true, silent = true }
-local term_opts = { silent = true }
 
 local keymap = vim.keymap.set
-
--- Remap space as leader
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
 
 -- Normal
 -- Window nav
@@ -26,3 +21,4 @@ keymap("v", "p", '"_dP', opts)
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 keymap("n", "<leader>gs", ":Neogit<CR>", opts)
 keymap("n", "<leader>xx", ":TroubleToggle<CR>", opts)
+keymap("n", "<leader>z", ":ZenMode<CR>", opts)
